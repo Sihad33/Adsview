@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONETAG ADS | MR UNKNOWN</title>
@@ -92,6 +91,18 @@
         <button id="showAdButton3" class="btn btn-warning">Show Ad 3</button>
         <button id="showAdButton4" class="btn btn-red">Show Ad 4</button>
     </div>
+
+    <h2>Complete Tasks</h2>
+    <div>
+        <button id="taskButton" class="btn btn-info">Show Tasks</button>
+        <div id="taskLinks" style="display: none;">
+            <button class="btn btn-secondary" onclick="window.location.href='https://zireemilsoude.net/4/8585960'">Task 1</button>
+            <button class="btn btn-secondary" onclick="window.location.href='https://zireemilsoude.net/4/8585971'">Task 2</button>
+            <button class="btn btn-secondary" onclick="window.location.href='https://zireemilsoude.net/4/8585900'">Task 3</button>
+            <button class="btn btn-secondary" onclick="window.location.href='https://zireemilsoude.net/4/8585963'">Task 4</button>
+            <button class="btn btn-secondary" onclick="window.location.href='https://zireemilsoude.net/4/8585624'">Task 5</button>
+        </div>
+    </div>
 </div>
 
 <!-- Bootstrap JS and dependencies -->
@@ -126,6 +137,12 @@
 
     document.getElementById('showAdButton4').addEventListener('click', function() {
         showAd('Show Ad 4');
+    });
+
+    // Toggle task links visibility
+    document.getElementById('taskButton').addEventListener('click', function() {
+        const taskLinks = document.getElementById('taskLinks');
+        taskLinks.style.display = taskLinks.style.display === 'none' ? 'block' : 'none';
     });
 </script>
 
